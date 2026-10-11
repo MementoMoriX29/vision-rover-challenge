@@ -9,11 +9,18 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
 ![Sin dependencias](https://img.shields.io/badge/dependencias%20en%20el%20robot-0-success)
 ![Simulador](https://img.shields.io/badge/simulador-96%25%20en%20100%20corridas-success)
-![Torneo](https://img.shields.io/badge/torneo-mi%C3%A9rcoles%207%20de%20octubre-orange)
 
 Reto de robótica colaborativa · Universidad CENFOTEC · Octubre 2026
 
+<br>
+
+<img src="docs/rovers.jpg" width="520" alt="Rovers 10 y 11 con sus marcadores ArUco sobre la placa ESP32">
+
+<sub>Rovers 10 y 11. El marcador ArUco de arriba es lo único que ve la cámara.</sub>
+
 </div>
+
+> **EN ·** Two autonomous ESP32 rovers deliver three cubes in ten minutes using only overhead-camera telemetry, with no communication between them and no human input. Both run the same deterministic, makespan-optimal planner, so they agree on who pushes which cube without talking. A closed-loop simulator imports the exact firmware modules that run on the robots and reaches 96 % success over 100 runs.
 
 ---
 
@@ -276,7 +283,7 @@ flowchart LR
     style D fill:#b91c1c,color:#fff,stroke:none
     style L fill:#1f6feb,color:#fff,stroke:none
     style M fill:#238636,color:#fff,stroke:none
-    style T fill:#b45309,color:#fff,stroke:none
+    style T fill:#30363d,color:#fff,stroke:none
 ```
 
 ### Problemas encontrados y correcciones
@@ -376,6 +383,16 @@ marcador girado, como el de la cancha                                  0 %
 Durante semanas el simulador marcó 98 % mientras la cancha daba 0 de 3. Fallaba en dos aspectos: los rovers **se atravesaban entre sí**, y publicaba el ángulo de las paletas, que es precisamente lo que la cámara no ve.
 
 Con ambos aspectos modelados, el firmware que tenían los robots daba **0 %**: exactamente lo observado en la cancha. Desde ahí, cada punto de mejora mide algo que existe.
+
+---
+
+## Equipo
+
+Desarrollado por el equipo **EU24** para el Vision Rover Challenge de la Universidad CENFOTEC.
+
+| Integrante | Rol |
+|---|---|
+| Jónatan Arauz Jarquín · [@MementoMoriX29](https://github.com/MementoMoriX29) | Desarrollador |
 
 ---
 
